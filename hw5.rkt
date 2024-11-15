@@ -19,35 +19,13 @@
 
 
 
-; Please do not edit lines above this one
-
-;**********************************************************
-; CS 201b HW #5, due 11:59 pm Wednesday, April 3rd.
-; using gradescope.
-;**********************************************************
+; PROJECT.
 ; Name: Ronald Milgo
 ; Email address: ronald.milgo@yale.edu
 ;**********************************************************
 
 ; Computer science topics: gates and circuits
-
-; Unless the problem specifies otherwise:
-; * You may solve the problem using any method 
-; and any Racket constructs, except mutators (set! and its relatives.)
-; EXCEPT you may use hash mutators, e.g., hash-set!
-; * You may write auxiliary procedure(s) in addition to
-; the one(s) specified in the problem.  Please include
-; a comment for each one explaining its input and results.
-
 ;**********************************************************
-; ** problem 0 ** (1 point)
-; Modify the following definition to reflect the number of
-; hours you spent on this assignment.
-
-(define hours 2)
-
-;**********************************************************
-
 ; Wires and gates.
 
 ; A wire is identified by a Racket symbol, for example 'x, 'y0, or 'next.
@@ -184,7 +162,7 @@
     (gate 'not '(z) 'z))))
 
 ;**********************************************************
-; ** problem 1 ** (9 points)
+; ** Task 1 **
 ; Write two procedures:
 
 ; (good-gate? value)
@@ -276,7 +254,7 @@
       (andmap (lambda (output) (or (member output (ckt-inputs value)) (wire-equal-gate-output? output (ckt-gates value)))) (ckt-outputs value))))
 
 ;**********************************************************
-; ** problem 2 ** (10 points)
+; ** Task 2 ** 
 ; Write two procedures.
 
 ; (all-wires circuit) to return the list of all the wire names that appear
@@ -310,7 +288,7 @@
   (gate-helper (ckt-gates circuit)))
 
 ;**********************************************************
-; ** problem 3 ** (10 points)
+; ** Task 3 ** 
 ; Define circuits for a half-adder and a full-adder in the representation described above.
 
 ; Your half-adder should be called ha-ckt
@@ -403,7 +381,7 @@
   (make-hash '((x . 0) (y . 1) (q . 1) (u . 0) )))
 
 ;**********************************************************
-; ** problem 4 ** (10 points)
+; ** Task 4 ** 
 ; Write a procedure 
 
 ;(next-value wire circuit config)
@@ -471,7 +449,7 @@
 
 
 ;**********************************************************
-; ** problem 5 ** (10 points)
+; ** Task 5 ** 
 ; Write a procedure 
 
 ; (next-config circuit config)
@@ -524,7 +502,7 @@
        result);return updated hash-table
 
 ;**********************************************************
-; ** problem 6 ** (10 points)
+; ** Task 6 ** 
 ; Write four procedures
 
 ; (stable? circuit config)
@@ -634,7 +612,7 @@
 
 
 ; *********************************************************
-; ** problem 7 ** (10 points)
+; ** Task 7 ** 
 ; Write a procedure 
 
 ; (simulate circuit config n)
@@ -683,7 +661,7 @@
 
 
 ;**********************************************************
-; ** problem 8 ** (10 points)
+; ** Task 8 ** 
 ; Write a procedure
 
 ; (final-config circuit config)
@@ -804,7 +782,7 @@
 
 
 ;**********************************************************
-; ** problem 10 ** (5 points)
+; ** Task 10 **
 
 ; Define a D-flipflop as described in lecture, using the given
 ; representation of circuits.  Please name it: dff-ckt.
@@ -833,7 +811,7 @@
 
 
 ;**********************************************************
-; ** problem 11 ** (5 points)
+; ** Task 11 ** 
 
 ; Design a circuit using the given representation that has no inputs
 ; and one output 't.  When the circuit is started in the initial (all
@@ -854,7 +832,7 @@
 (define timing-ckt empty)
 
 ;**********************************************************
-; ** problem 12 ** (5 points)
+; ** Task 12 ** 
 
 ; Design a circuit using the given representation that has no inputs
 ; and one output 't.  When the circuit is started in the initial (all
@@ -1077,4 +1055,4 @@
 	 (make-hash '((x . 1) (y . 1) (q . 0) (u . 1))))
    ))
 
-;**************  end of hw # 5  ************************************
+;**************  end of simulation_1  ************************************

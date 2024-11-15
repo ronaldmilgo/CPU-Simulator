@@ -21,9 +21,6 @@
 
 
 ;************************************************************
-; CS 201 HW #6  DUE Wednesday April 17th at 11:59 pm, 
-; via gradescope
-;************************************************************
 ; Name: Ronald Milgo
 ; Email address: ronald.milgo@yale.edu
 ;************************************************************
@@ -31,20 +28,8 @@
 ; Computer science topics: TC-201 assembler and simulator,
 ; assembly language programs for encrypt, reverse, and power.
 
-; You may write auxiliary procedure(s) in addition to
-; the one(s) specified in the problem.  Please include
-; a comment for each one explaining its input and results.
-
-;************************************************************
-; ** problem 0 ** (1 point)
-; Modify the following definition to reflect the number of
-; hours you spent on this assignment.
-
-(define hours 19)
 
 ; ********************************************************
-; ** problem 00 ** (1 fairly easy point)
-
 ; Below is a UNIX transcript with one command replaced by XXXX
 
 (define transcript "
@@ -98,7 +83,6 @@ hello world
     (0 0 0 0  0 0 0 0  0 0 1 0  0 1 0 0)))
 
 ;************************************************************
-; ** problem 1 ** (8 points)
 ; Write three procedures
 
 ; (ram-read address ram)
@@ -190,7 +174,6 @@ hello world
                 (loop (+ index 1) (cons (list index read1 read2) diffs))))))))
 
 ;************************************************************
-; ** problem 2 ** (10 points)
 ; Write four procedures:
 
 ; (extract i j lst)
@@ -327,7 +310,6 @@ hello world
 (define config-ex2 (conf cpu-ex2 ram-ex2))
 
 ;************************************************************
-; ** problem 3 ** (10 points)
 ; Write four procedures
 
 ; (diff-configs config1 config2)
@@ -462,7 +444,6 @@ hello world
     (conf cpu new_ram)))
 
 ;************************************************************
-; ** problem 4 ** (10 points)
 ; Write two procedures
 
 ; (do-add address config)
@@ -569,7 +550,6 @@ hello world
     (conf updated-cpu ram)))
 
 ;************************************************************
-; ** problem 5 ** (10 points)
 ; Write two procedures
 
 ; (do-input config)
@@ -631,7 +611,6 @@ hello world
     config))
 
 ;************************************************************
-; ** problem 6 ** (10 points)
 ; Write four procedures
 
 ; (do-jump address config)
@@ -722,7 +701,6 @@ hello world
         (conf (update 'aeb '(0) (conf-cpu (incr-pc 1 config))) ram))))
            
 ;************************************************************
-; ** problem 7 ** (10 points)
 ; Write three procedures
 
 ; (do-loadi address config)
@@ -834,7 +812,6 @@ hello world
 
 
 ;************************************************************
-; ** problem 8 ** (10 points)
 ; Write two procedures
 
 ; (do-and address config)
@@ -900,7 +877,6 @@ hello world
 
 
 ;************************************************************
-; ** problem 9 ** (10 points)
 ; Write one procedure
 
 ; (next-config config)
@@ -1031,7 +1007,6 @@ hello world
 
 
 ;************************************************************
-; ** problem 10 ** (10 points)
 ; Write three procedures
 
 ; (init-config lst)
@@ -1256,7 +1231,6 @@ hello world
    (entry 'xor '(1 1 1 1))))
 
 ;************************************************************
-; ** problem 11 ** (10 points)
 ; Write one procedure and one program for the TC-201
 
 ; (simulate n config)
@@ -1388,7 +1362,6 @@ hello world
   ))
 
 ;************************************************************
-; ** problem 12 ** (5 points)
 ; Write one program for the TC-201
 
 ; reverse-prog
@@ -1444,7 +1417,6 @@ hello world
     
 
 ; ********************************************************
-; ** problem 13 ** (5 points)
 ; Write another program for the TC-201
 
 ; power-prog
@@ -1781,4 +1753,4 @@ hello world
 
    
 
-;********************** end of hw6.rkt **********************
+;********************** end of cpu_simulation_2.rkt **********************
